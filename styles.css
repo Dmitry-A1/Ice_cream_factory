@@ -1,0 +1,27 @@
+﻿/* Сбрасываем отступы и делаем body на весь экран */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Фон с SVG */
+body {
+
+    background-image: url("Frame_1.jpg"); /* ../ поднимается из scr в Ice_cream_factory */
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* растянуть на весь экран */
+    background-position: center; /* центрирование */
+    background-attachment: fixed; /* закрепить фон при скролле */
+}
+
+/* Пример контента поверх фона */
+.content {
+    position: relative;
+    z-index: 1;
+    color: orangered;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+
