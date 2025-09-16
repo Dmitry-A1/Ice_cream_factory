@@ -25,3 +25,48 @@ body {
     padding-top: 50px;
 }
 
+.slogans {
+    position: absolute;
+    bottom: 5px; 
+    left: 180px;
+    margin: 60px auto;
+    max-width: 800px;
+}
+
+.slogans p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #8C5532;
+    margin: 10px 0;
+    font-weight: 600;
+
+}
+
+.slogans p:nth-child(1) {
+    margin-left: 0;
+}
+
+.slogans p:nth-child(2) {
+    margin-left: 40px;
+}
+
+.slogans p:nth-child(3) {
+    margin-left: 80px;
+}
+
+.slogans p:nth-child(4) {
+    margin-left: 120px;
+}
+
+.slogans p:nth-child(5) {
+    margin-left: 160px;
+}
+
+.slogans p:nth-child(6) {
+    margin-left: 200px;
+}
+
+.slogans p:nth-child(7) {
+    margin-left: 240px;
+}
