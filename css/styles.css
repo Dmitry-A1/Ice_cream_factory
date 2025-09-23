@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    background-image: url("assets/Frame_1.jpg"); 
+    background-image: url("../assets/Frame_1.jpg"); 
     background-repeat: no-repeat;
     background-size: 100% 100%; /* растянуть на весь экран */
     background-position: center; /* центрирование */

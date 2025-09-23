@@ -1,10 +1,10 @@
-﻿console.log("oi4jeokgjwoeigijwe[oijg");
+﻿
 
 const images = [
-    "award_1.png",
-    "award_2.png",
-    "award_3.png",
-    "award_4.png"
+    "img/award_1.png",
+    "img/award_2.png",
+    "img/award_3.png",
+    "img/award_4.png"
 ];
 
 const track = document.querySelector('.carousel-track');
