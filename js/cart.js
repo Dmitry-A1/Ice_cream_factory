@@ -4,6 +4,7 @@ const closeBtn = document.getElementById('closeDialog');
 const form = document.getElementById('contactForm');
 let lastActive = null;
 
+
 openBtn.addEventListener('click', () => {
     lastActive = document.activeElement;
     dlg.showModal(); 
@@ -17,3 +18,24 @@ form?.addEventListener('submit', (e) => {
 });
 
 dlg.addEventListener('close', () => { lastActive?.focus(); });
+
+
+form?.addEventListener('submit', (e) => {
+    [...form.elements].forEach(el => el.setCustomValidity?.(''));
+    if (!form.checkValidity()) {
+        e.preventDefault();
+        const email = form.elements.email;
+        if (email?.validity.typeMismatch) {
+            email.setCustomValidity('Введите корректный e-mail, напримерname@example.com');}
+        form.reportValidity(); 
+        [...form.elements].forEach(el => {
+            if (el.willValidate) el.toggleAttribute('aria-invalid',
+                !el.checkValidity());
+        });
+        return;
+    }
+    
+    e.preventDefault();
+    document.getElementById('contactDialog')?.close('success');
+    form.reset();
+});
