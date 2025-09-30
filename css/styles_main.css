@@ -1,0 +1,115 @@
+
+:root{
+    --text_color: #8C5532;
+
+}
+
+body {
+    background-image: url("../assets/Frame 6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.certificates-carousel {
+    position: absolute;
+    top: 215px;
+    left: 1125px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.carousel-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--text_color);
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.slide img {
+    width: 125px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: #333;
+}
+
+.slogans {
+    position: absolute;
+    bottom: 5px;
+    left: 180px;
+    margin: 60px auto;
+    max-width: 800px;
+}
+
+.slogans p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--text_color);
+    margin: 10px 0;
+    font-weight: 600;
+
+}
+
+.slogans p:nth-child(1) {
+    margin-left: 0;
+}
+
+.slogans p:nth-child(2) {
+    margin-left: 40px;
+}
+
+.slogans p:nth-child(3) {
+    margin-left: 80px;
+}
+
+.slogans p:nth-child(4) {
+    margin-left: 120px;
+}
+
+.slogans p:nth-child(5) {
+    margin-left: 160px;
+}
+
+.slogans p:nth-child(6) {
+    margin-left: 200px;
+}
+
+.slogans p:nth-child(7) {
+    margin-left: 240px;
+}
+
+
+
+
