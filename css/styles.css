@@ -1,49 +1,53 @@
-﻿:root{
+﻿:root {
     --bgHeaderColor: #7DC7FF;
 }
 
-header{
+header {
     width: 100%;
-    height: auto;
+    height: 100px;
     background-color: var(--bgHeaderColor);
-    position:sticky;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
 
 
 .button-section {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 20px 20px;
-    max-width: 1200px;
-    margin: 0 auto; 
-    gap: 20px; 
+    gap: 100px;
 }
 
 .button-section img {
     width: 200px;
-    height: auto; 
+    height: auto;
     cursor: pointer;
     transition: transform 0.3s;
 }
 
 .button-section img:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .site-footer {
+    width: 100%;
     position: fixed;
     bottom: -5px;
     left: 0;
     display: inline-block;
-    padding: 0px 10px;
+    padding: 0 10px;
+    background-color: var(--bgHeaderColor);
 }
 
 
